@@ -10,11 +10,12 @@
     <header class="mainHeader">
       <div class="container">
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><div class="mainLogo"><a href="#"><img src="img/logo.png" width="138" height="70" alt="logo"></a></div></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li><!--
+          --><li><a href="#">Фото и видео</a></li><!--
+          --><li><a href="index.html"><div class="mainLogo"><img src="img/logo.png" width="138" height="70" alt="logo"></div></a></li><!--
+          --><li class="algnRight"><a href="#">Карта штата</a></li><!--
+          --><li class="algnRight"><a href="#">Гостиницы</a></li>
+        </ul>
         </ul>
       </div>  
     </header>
@@ -22,23 +23,23 @@
       <section class="searchFilters">
         <form class="searchForm" action="https://echo.htmlacademy.ru" method="post">
           <div class="featuresFilter"> 
-            <h2 class="filterName">Инфраструктура:</h2>
+            <h2>Инфраструктура:</h2>
             <ul>
               <li><input type="checkbox" name="pool" value="f1" checked>Бассейн</li>
               <li><input type="checkbox" name="parking" value="f2">Парковка</li>
               <li><input type="checkbox" name="WiFi" value="f3">Wi-Fi</li>
             </ul>
-          </div>
-          <div class="typeFilter">
-            <h2 class="filterName">Тип жилья:</h2>
+          </div><!--
+          --><div class="typeFilter">
+            <h2>Тип жилья:</h2>
             <ul>
               <li><input type="checkbox" name="hotel" value="t1" checked>Гостиница</li>
               <li><input type="checkbox" name="motel" value="t2" checked>Мотель</li>
               <li><input type="checkbox" name="apartments" value="t3" checked>Апартаменты</li>
             </ul>
-          </div>
-          <div class="priceFilter">
-            <h2 class="filterName">Стоимость в сутки(р):</h2>
+          </div><!--
+          --><div class="priceFilter">
+            <h2>Стоимость в сутки(р):</h2>
             <div class="priceControls">
               <input class="minPrice" type="text" value="от 0">
               <input class="maxPrice" type="text" value="до 3000">
@@ -48,23 +49,24 @@
               <div class="toggle minToggle"></div>
               <div class="toggle maxToggle"></div>
             </div>
+            <button>Показать</button>
           </div>
-          <button>Показать</button>
+          
         </form>
       </section>
       <section class="searchResults">
         <div class="resultsNumber">
           <span class="resultsText">Найдено: 3</span>
-        </div>
-        <div class="resultsSorting">
+        </div><!--
+        --><div class="resultsSorting">
           <span class="sortingText">Сортировка:</span>
           <ul>
             <li class="active"><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
-        </div>
-        <div class="resultsRanging">
+        </div><!--
+        --><div class="resultsRanging">
           <ul>
             <li><a class="btn btnUp" href="#">/\</a></li>
             <li><a class="btn btnDown" href="#">\/</a></li>
@@ -72,8 +74,8 @@
         </div>
       </section>
       <article class="hotels amaraHotel">
-        <div class="hotelsImg"><img src="img/amara.jpg" width="135" height="90" alt="Amara"></div>
-        <div class="hotelsInf">
+        <div class="hotelsImg"><img src="img/amara.jpg" width="135" height="90" alt="Amara"></div><!--
+        --><div class="hotelsInf">
           <h1>Amara Resort &amp; Spa</h1>
           <div class="hotelsDetail">
             <span class="hotelsText">Гостиница</span>
@@ -83,15 +85,15 @@
             <span class="hotelsText">От 3500 р.</span>
             <a class="prcBtn" href="#">Забронировать</a>
           </div>   
-        </div>
-        <div class="hotelsRating">
+        </div><!--
+        --><div class="hotelsRating">
           
           <span class="hotelsText">Рейтинг: 8,5</span>
         </div>
       </article>
       <article class="hotels desertHotel">
-        <div class="hotelsImg"><img src="img/desert_quail.jpg" width="135" height="90" alt="Desert Quail"></div>
-        <div class="hotelsInf">
+        <div class="hotelsImg"><img src="img/desert_quail.jpg" width="135" height="90" alt="Desert Quail"></div><!--
+        --><div class="hotelsInf">
           <h1>Desert Quail Inn</h1>
           <div class="hotelsDetail">
             <span class="hotelsText">Отель</span>
@@ -101,15 +103,15 @@
             <span class="hotelsText">От 2000 р.</span>
             <a class="prcBtn" href="#">Забронировать</a>
           </div>   
-        </div>
-        <div class="hotelsRating">
+        </div><!--
+        --><div class="hotelsRating">
           
           <span class="hotelsText">Рейтинг: 8,9</span>
         </div>
       </article>
       <article class="hotels diabloHotel">
-        <div class="hotelsImg"><img src="img/poco_diablo.jpg" width="135" height="90" alt="Poco Diablo"></div>
-        <div class="hotelsInf">
+        <div class="hotelsImg"><img src="img/poco_diablo.jpg" width="135" height="90" alt="Poco Diablo"></div><!--
+        --><div class="hotelsInf">
           <h1>Villas At Poco Diablo</h1>
           <div class="hotelsDetail">
             <span class="hotelsText">Апартаменты</span>
@@ -119,8 +121,8 @@
             <span class="hotelsText">От 4000 р.</span>
             <a class="prcBtn" href="#">Забронировать</a>
           </div>   
-        </div>
-        <div class="hotelsRating">
+        </div><!--
+        --><div class="hotelsRating">
           
           <span class="hotelsText">Рейтинг: 9,2</span>
         </div>
@@ -132,14 +134,14 @@
       <div class="container">
         <div class="footerHashtag">
           <a class="hashtag" href="#">#VISITSEDONA</a>
-        </div>
-        <div class="footerSocial">
+        </div><!--
+        --><div class="footerSocial">
           <a class="social socialTw" href="#">Tw</a>
           <a class="social socialFb" href="#">FB</a>
           <a class="social socialTube" href="#">YouTube</a>
-        </div>
-        <div class="footerCopyright">
-          <a class="copyright" href="https://htmlacademy.ru"><img src="img/copyright.png" width="113" height="39" alt="Копирайт"></a>
+        </div><!--
+        --><div class="footerCopyright">
+          <a class="copyright" href="https://htmlacademy.ru">Website by<img src="img/copyright.png" width="113" height="39" alt="Копирайт"></a>
         </div>
       </div>
     </footer>
