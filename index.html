@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body><div class="container">
     <header class="mainHeader">
-      <div class="container">
         <ul>
           <li><a href="#">Информация</a></li><!--
           --><li><a href="#">Фото и видео</a></li><!--
@@ -16,19 +16,18 @@
           --><li class="algnRight"><a href="#">Карта штата</a></li><!--
           --><li class="algnRight"><a href="hotels.html">Гостиницы</a></li>
         </ul>
-      </div>  
     </header>
-    <main class="container">
+    <main>
       <section class="mainImage">
         <div class="imageText"><img src="img/welcome.png" width="458" height="352" alt="Седона главная"></div>
-        <div class="imageStrip"><img src="img/strip.png" width="1200" height="57"></div>
+        <div class="imageStrip"><img src="img/strip.png" width="1200" height="57" alt="Обрезающая полоса"></div>
       </section>
       <section class="mainFeatures">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин,по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2>Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="featuresItem">
-        <div class="featuresPost blue">
+      <section class="featuresItem  blue">
+        <div class="featuresPost">
           <h2>Настоящий городок</h2>
           <span class="featuresNumber"> &ndash; №1 &ndash;</span>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -36,33 +35,33 @@
         --><div class="imageRight"><img src="img/img1.jpg" width="800" height="256" alt="мост Дьявола"></div>
       </section><!--
       --><section class="featuresItem">
-        <div class="featuresPost">
+        <div class="featuresPost imaged">
           <img src="img/home_icon.png" alt="Жилье">
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
         </div><!--
-        --><div class="featuresPost">
+        --><div class="featuresPost imaged">
           <img src="img/burger_icon.png" alt="Бургер">
           <h2>Еда</h2>
           <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
         </div><!--
-        --><div class="featuresPost">
+        --><div class="featuresPost imaged">
           <img src="img/gift_icon.png" alt="Сувенир">
           <h2>Сувениры</h2>
-          <p>Не только китайского, но и местного производства!</p>
+          <p>Не только китайского,<br> но и местного производства!</p>
         </div>
       </section><!--
-      --><section class="featuresItem">
+      --><section class="featuresItem blue">
         <div class="imageLeft">
           <img src="img/img2.jpg" width="800" height="256" alt="мост Дьявола">
         </div><!--
-        --><div class="featuresPost blue">
-          <h2>Там есть мост дьявола</h2>
+        --><div class="featuresPost ">
+          <h2>Там есть<br> мост дьявола</h2>
           <span class="featuresNumber"> &ndash; №2 &ndash;</span>
-          <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+          <p>Да, по нему можно пройти!<br> Если конечно Вы осмелитесь</p>
         </div>
       </section><!--
-      --><section class="featuresItem">
+      --><section class="featuresItem lightgray">
         <div class="featuresPost">
           <h2>Небольшая площадь</h2>
           <span class="featuresNumber"> &ndash; №3 &ndash;</span>
@@ -79,52 +78,45 @@
           <p>Большинство едет в Гранд-Каньон и толпится там</p>
         </div>
       </section>
+      <div class="searchHeader">
+        <span class="searchTitle">Заинтересовались?</span>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      </div>
       <section class="mainSearch">
-        <b class="searchTitle">Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <a class="btn" href="#">Поиск гостиницы в Седоне</a>
-        <form class="mainForm" action="https://echo.htmlacademy.ru" method="post" style="display: none;">
+        <a class="searchBtn" href="form.html">Поиск гостиницы в Седоне</a>
+        <form class="mainForm mainFormClose" action="https://echo.htmlacademy.ru" method="post">
           <div class="dateIn">
-            <label>Дата заезда 
-              <input type="text" name="dateIn" value="" placeholder="24 апреля 2016"></label>    
+            <label>Дата заезда:<input type="text" name="dateIn" value="" placeholder="24 апреля 2016"><a class="icon-calendar"></a></label>    
           </div>
           <div class="dateOut">
-            <label>Дата выезда 
-              <input type="text" name="dateOut" value="" placeholder="4 июля 2016"></label>
+            <label>Дата выезда:<input type="text" name="dateOut" value="" placeholder="4 июля 2016"><a class="icon-calendar"></a></label>
           </div>
           <div class="people">
-            <label>Взрослые 
-              <button class="minus">-</button> 
-              <input type="text" name="Adults" value="" placeholder="2">
-              <button class="plus">+</button>
-            </label>
-            <label>Дети 
-              <button class="minus">-</button> 
-              <input type="text" name="Children" value="" placeholder="0"> 
-              <button class="plus">+</button>
-            </label> 
+            <label for="adult">Взрослые:</label><button class="iconBtn icon-minus adlMinus"></button><input type="text" name="Adults" id="adult" value="2"><button class="iconBtn icon-plus adlPlus"></button>    
+            <label for="child">Дети:</label><button class="iconBtn  icon-minus chldMinus"></button><input type="text" name="Children" id="child" value="0"><button class="iconBtn icon-plus"></button>
           </div>
-          <button>Найти</button>
+          <button class="formBtn">Найти</button>
         </form>
       </section>
       <section class="mainMap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578732.4951190423!2d-111.82495776611563!3d34.81636523232919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1454351174776" frameborder="0" allowfullscreen></iframe>
       </section>
     </main>
-    <footer class="mainFooter">
-      <div class="container">
+    <footer class="mainFooter index">
         <div class="footerHashtag">
           <a class="hashtag" href="#">#VISITSEDONA</a>
         </div><!--
         --><div class="footerSocial">
-          <a class="social socialTw" href="#">Tw</a>
-          <a class="social socialFb" href="#">FB</a>
-          <a class="social socialTube" href="#">YouTube</a>
+          <a class="social socialTw" href="#"><span class="icon-twitter"></span></a>
+          <a class="social socialFb" href="#"><span class="icon-facebook"></span></a>
+          <a class="social socialTube" href="#"><span class="icon-youtube"></span></a>
         </div><!--
         --><div class="footerCopyright">
-          <a class="copyright" href="https://htmlacademy.ru">Website by<img src="img/copyright.png" width="113" height="39" alt="Копирайт"></a>
+          <a class="copyright" href="https://htmlacademy.ru">Website by<div class="copySprite"></div></a>
         </div>
-      </div>
     </footer>
+    </div>
+    <script src="js/script.min.js">
+    </script>
   </body>
 </html>
