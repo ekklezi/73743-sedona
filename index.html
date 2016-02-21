@@ -9,13 +9,13 @@
   </head>
   <body><div class="container">
     <header class="mainHeader">
-        <ul>
-          <li><a href="#">Информация</a></li><!--
-          --><li><a href="#">Фото и видео</a></li><!--
-          --><li><a href="index.html"><div class="mainLogo"><img src="img/logo.png" width="138" height="70" alt="logo"></div></a></li><!--
-          --><li class="algnRight"><a href="#">Карта штата</a></li><!--
-          --><li class="algnRight"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+      <ul>
+        <li class="algnLeft"><a href="#">Информация</a></li><!--
+        --><li class="algnLeft media"><a href="#">Фото и видео</a></li><!--
+        --><li class="algnRight"><a href="#">Карта штата</a></li><!--
+        --><li class="algnRight"><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+      <a class="mainLogo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="logo"></a>
     </header>
     <main>
       <section class="mainImage">
@@ -36,17 +36,17 @@
       </section><!--
       --><section class="featuresItem">
         <div class="featuresPost imaged">
-          <img src="img/home_icon.png" alt="Жилье">
+          <img src="img/home_icon.png" width="75" height="72" alt="Жилье">
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
         </div><!--
         --><div class="featuresPost imaged">
-          <img src="img/burger_icon.png" alt="Бургер">
+          <img src="img/burger_icon.png" width="74" height="70" alt="Бургер">
           <h2>Еда</h2>
           <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
         </div><!--
         --><div class="featuresPost imaged">
-          <img src="img/gift_icon.png" alt="Сувенир">
+          <img src="img/gift_icon.png" width="64" height="76" alt="Сувенир">
           <h2>Сувениры</h2>
           <p>Не только китайского,<br> но и местного производства!</p>
         </div>
@@ -85,21 +85,17 @@
       <section class="mainSearch">
         <a class="searchBtn" href="form.html">Поиск гостиницы в Седоне</a>
         <form class="mainForm mainFormClose" action="https://echo.htmlacademy.ru" method="post">
-          <div class="dateIn">
-            <label>Дата заезда:<input type="text" name="dateIn" value="" placeholder="24 апреля 2016"><a class="icon-calendar"></a></label>    
-          </div>
-          <div class="dateOut">
-            <label>Дата выезда:<input type="text" name="dateOut" value="" placeholder="4 июля 2016"><a class="icon-calendar"></a></label>
-          </div>
-          <div class="people">
-            <label for="adult">Взрослые:</label><button class="iconBtn icon-minus adlMinus"></button><input type="text" name="Adults" id="adult" value="2"><button class="iconBtn icon-plus adlPlus"></button>    
-            <label for="child">Дети:</label><button class="iconBtn  icon-minus chldMinus"></button><input type="text" name="Children" id="child" value="0"><button class="iconBtn icon-plus"></button>
-          </div>
+          <div class="indexForm">
+            <label class="dInLabel" for="dIn">Дата заезда: </label><input type="text" id="dIn" name="dateIn" value="" placeholder="24 апреля 2016"><button class="icon-calendar"></button>   
+            <label class="dOutLabel" for="dOut">Дата выезда: </label><input type="text" id="dOut" name="dateOut" value="" placeholder="4 июля 2016"><button class="outCal icon-calendar"></button>
+            <div class="adultInp"><label for="adult">Взрослые:</label><button class="iconBtn icon-minus adlMinus"></button><input type="text" name="Adults" id="adult" value="2"><button class="iconBtn icon-plus adlPlus"></button></div><!--    
+            --><div class="childInp"><label for="child">Дети:</label><button class="iconBtn  icon-minus chldMinus"></button><input type="text" name="Children" id="child" value="0"><button class="iconBtn icon-plus"></button></div>
+          </div>  
           <button class="formBtn">Найти</button>
         </form>
       </section>
       <section class="mainMap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578732.4951190423!2d-111.82495776611563!3d34.81636523232919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1454351174776" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578732.4951190423!2d-111.82495776611563!3d34.81636523232919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1454351174776"  allowfullscreen></iframe>
       </section>
     </main>
     <footer class="mainFooter index">
@@ -112,7 +108,7 @@
           <a class="social socialTube" href="#"><span class="icon-youtube"></span></a>
         </div><!--
         --><div class="footerCopyright">
-          <a class="copyright" href="https://htmlacademy.ru">Website by<div class="copySprite"></div></a>
+          <a class="copyright" href="https://htmlacademy.ru">Website by <div class="copySprite"></div></a>
         </div>
     </footer>
     </div>

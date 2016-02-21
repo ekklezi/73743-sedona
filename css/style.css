@@ -113,7 +113,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
 }
 .mainHeader li {
     display: inline-block;
@@ -124,13 +123,18 @@ ul {
     padding-bottom: 20px;
 }
 .mainHeader li:first-child {
-    padding-left: 72px;
-    width: 168px;
+    margin-left: 72px;
+}
+.mainHeader .algnLeft {
     text-align: left;
 }
+.media {
+    margin-right: 96px;
+}
 .mainHeader li:last-child {
-    padding-right: 72px;
-    width: 168px;
+    margin-right: 72px;
+}
+.mainHeader .algnRight {
     text-align: right;
 }
 .mainHeader a {
@@ -247,7 +251,7 @@ ul {
     position: relative;
 }
 .searchHeader {
-    margin-top: 57px;
+    margin-top: 54px;
     margin-left: 310px;
     margin-right: 310px;
     margin-bottom: 50px;
@@ -257,6 +261,7 @@ ul {
     display: block;
     font-weight: bold;
     font-size: 30px;
+    line-height: 24px;
     margin-bottom: 34px;
 }
 .searchBtn {
@@ -312,6 +317,10 @@ ul {
     -webkit-animation: bounce 2s;
     animation: bounce 2s;
 }
+.indexForm {
+    width: 454px;
+    position: relative;
+}
 .mainForm label,
 .mainForm input[type="text"] {
     font-family: "PT Sans", "Arial" sans-serif;
@@ -320,7 +329,6 @@ ul {
     text-transform: uppercase;
     font-weight: 700;
     color: #000000;
-    position: relative;
 }
 .mainForm input[type="text"] {
     outline: none;
@@ -334,8 +342,32 @@ ul {
     margin-bottom: 29px;
     background-color: #f2f2f2;
 }
+.dInLabel {
+    display: inline-block;
+    vertical-align: top;
+    width: 92px;
+    padding-top: 6px;
+}
+.dOutLabel {
+    display: inline-block;
+    vertical-align: top;
+    width: 95px;
+    padding-top: 6px;
+}
 .mainForm input[name="dateOut"] {
     margin-left: 17px;
+    width: 320px;
+}
+.adultInp {
+    display: inline-block;
+    vertical-align: top;
+    width: 227px;
+}
+.childInp {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    margin-left: 46px;
 }
 .mainForm input[name="Adults"],
 .mainForm input[name="Children"] {
@@ -377,36 +409,39 @@ input[type="text"]:-ms-input-placeholder {
     font-size: 14px;
     line-height: 26px;
     color: #a9a9a9;
+    display: inline-block;
     vertical-align: top;
+    outline: none;
 }
 .mainForm .icon-plus,
 .mainForm .icon-minus {
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
 }
 .adlMinus {
-    margin-left: 38px;
-}
-.adlPlus {
-    margin-right: 44px;
+    margin-left: 42px;
 }
 .chldMinus {
-    margin-left: 26px;
+    margin-left: 28px;
 }
 .icon-calendar {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
     margin: 0;
+    border: 0;
+    width: 38px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
     font-size: 21px;
-    height: 34px;
-    width: 30px;
     color: #c2c2c2;
     cursor: pointer;
-    padding-top: 4px;
-    padding-left: 7px;
     position: absolute;
-    right: 0;
-    top: -10px;
+    padding-top: 6px;
+    right: 3px;
+    top: 0;
+    background: none;
+    outline: none;
+}
+.outCal {
+    top: 68px;
 }
 .icon-calendar:hover,
 .icon-minus:hover,
@@ -419,8 +454,9 @@ input[type="text"]:-ms-input-placeholder {
     color: #81b3d2;
 }
 .formBtn {
-    width: 450px;
-    height: 58px;
+    width: 454px;
+    padding-top: 19px;
+    padding-bottom: 18px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -443,7 +479,6 @@ input[type="text"]:-ms-input-placeholder {
 .footerCopyright,
 .footerSocial {
     display: inline-block;
-    width: 400px;
     vertical-align: top;
     text-align: center;
 }
@@ -460,6 +495,7 @@ input[type="text"]:-ms-input-placeholder {
     color: #000000;
 }
 .footerHashtag {
+    width: 400px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -467,6 +503,7 @@ input[type="text"]:-ms-input-placeholder {
     padding-bottom: 30px;
 }
 .footerSocial {
+    width: 400px;
     padding-top: 36px;
     padding-bottom: 38px;
     color: #ffffff;
@@ -499,21 +536,19 @@ input[type="text"]:-ms-input-placeholder {
     color: #88b6d1;
 }
 .footerCopyright {
-    width: 298px;
-    text-align: left;
-    padding-top: 46px;
+    text-align: center;
+    padding-top: 42px;
     padding-bottom: 53px;
     padding-left: 102px;
-    position: relative;
 }
 .footerCopyright .copySprite {
-    width: 113px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 117px;
     height: 39px;
-    position: absolute;
-    top: 38px;
-    right: 102px;
     background-image: url(../img/sprites.png);
     background-position: -1px -104px;
+    margin-left: 4px;
 }
 .copySprite:hover {
     background-position: -1px -7px;
@@ -742,6 +777,10 @@ input[type="checkbox"]:disabled + label::before {
 }
 .resultsSorting li {
     margin-right: 29px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;
+    font-size: 0;
 }
 .resultsSorting a {
     font-size: 12px;
