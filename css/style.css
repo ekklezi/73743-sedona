@@ -186,6 +186,8 @@ ul {
 }
 .mainFeatures h2 {
     margin-bottom: 27px;
+    margin-left: 378px;
+    margin-right: 378px;
 }
 .imageRight,
 .imageLeft {
@@ -436,13 +438,10 @@ input[type="text"]:-ms-input-placeholder {
     position: absolute;
     padding-top: 6px;
     right: 3px;
-    top: 0;
     background: none;
     outline: none;
 }
-.outCal {
-    top: 68px;
-}
+
 .icon-calendar:hover,
 .icon-minus:hover,
 .icon-plus:hover {
@@ -536,6 +535,7 @@ input[type="text"]:-ms-input-placeholder {
     color: #88b6d1;
 }
 .footerCopyright {
+    max-width: 298px;
     text-align: center;
     padding-top: 42px;
     padding-bottom: 53px;
@@ -852,14 +852,15 @@ input[type="checkbox"]:disabled + label::before {
 }
 .hotelsName {
     text-decoration: none;
+    color:#000000;
 }
 .hotelsName h1 {
     display: inline;
 }
-.hotelsName h1:hover {
+.hotelsName:hover {
     color: #81b3d2;
 }
-.hotelsName h1:active {
+.hotelsName:active {
     color: #b2b2b2;
 }
 .hotelsDetail {
